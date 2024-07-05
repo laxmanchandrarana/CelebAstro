@@ -19961,7 +19961,7 @@ a img.aligncenter {
 
 /*logo*/
 a.logo {
-	align-items: center;
+	align-items: left;
 	display: flex;
 	padding-bottom: 5px;
 	padding-top: 5px;
@@ -19969,16 +19969,16 @@ a.logo {
 
 a.logo img {
 	display: inline-block;
-	max-height: 50px;
+	max-height: 90px;
 }
 
 a.logo .logo-text {
 	font-family: "El Messiri", sans-serif;
-	font-size: 20px;
-	font-weight: 700;
-	letter-spacing: 1em;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 0.6em;
 	line-height: 1;
-	margin-left: -15px;
+	margin-left: -45px;
 	margin-top: 2px;
 	padding: 0;
 	text-indent: 1em;
@@ -23284,7 +23284,19 @@ img.absolute_image {
 	border-radius: 50%;
 	margin: 0 -10px;
 	position: relative;
+	right:0;
 	width: calc(100% + 20px);
+}
+.guruji-image {
+	position:absolute;
+	bottom:0;
+	right:0;
+	border-radius: 50%;
+	margin: 0 -10px;
+	width: calc(100% + 20px);
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	/* height: 40%; */
+	
 }
 
 .horoscope-image:hover {
