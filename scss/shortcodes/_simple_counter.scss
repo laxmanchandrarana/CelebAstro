@@ -1,0 +1,90 @@
+/* Simple Counter Shortcode */
+.ls{
+  .shortcode-simple-counter{
+    .counters-borders::before,
+    .counters-borders::after{
+      background-color: $darkgreyColor;
+    }
+  }
+}
+.shortcode-simple-counter {
+  position: relative;
+
+  .underline::after{
+    height: 5px;
+    width: 70px;
+  }
+
+  .counter-wrap{
+    display: inline-flex;
+    align-items: center;
+    span{
+      font-family: 'El Messiri', sans-serif;
+      color: $colorMain2;
+      font-size: 50px;
+      margin-left: 2px;
+      line-height: 40px;
+    }
+  }
+
+  .counter-size {
+    color: $colorMain;
+    font-size: 50px;
+    display: inline-block;
+    margin-bottom: 0;
+    line-height: 1;
+    font-weight: 600;
+  }
+  .counter-text {
+    margin-top: 30px;
+    color: $darkColor;
+    line-height: 1;
+    font-size: 16px;
+    @media (max-width: 991px){
+      margin-top: 10px;
+    }
+  }
+
+  &.counter-layout-2{
+    .counter_wrap{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .counter-wrap{
+      display: inline-flex;
+    }
+    .counter-size{
+      font-size: 90px;
+      font-weight: bold;
+      line-height: 0.8;
+      padding-top: 0.2em;
+    }
+    .counter-text{
+      margin-top: 0!important;
+      margin-left: 20px;
+      font-size: 30px;
+      line-height: 1.1;
+    }
+  }
+}
+
+.ds{
+  .shortcode-simple-counter{
+    .counter-size{
+      color: $colorMain2;
+    }
+    .counter-text{
+      color: $darkFontColor;
+    }
+  }
+}
+
+.cs{
+  .shortcode-simple-counter{
+    .counter-text{
+      color: $lightColor;
+    }
+  }
+}

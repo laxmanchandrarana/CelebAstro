@@ -1,0 +1,210 @@
+.pricing-plan {
+  text-align: center;
+  padding: 40px 40px 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  .price-wrap {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 20px;
+    line-height: 0.7;
+    margin: 60px 0 10px;
+
+    &[class*='bg-'] {
+      padding: 30px 30px 10px;
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
+    .plan-price {
+      font-size: 62px;
+      font-weight: 900;
+    }
+  }
+  [class*='bg-'] {
+    padding: 10px 30px 30px;
+    margin-left: -41px;
+    margin-right: -41px;
+  }
+  .plan-name {
+    &[class*='bg-'] {
+      padding-top: 30px;
+      margin-top: -40px;
+    }
+    h3 {
+      font-size: 20px;
+      letter-spacing: 0.2em;
+      line-height: 1;
+    }
+  }
+
+  @media(min-width: 1200px) {
+    padding: 57px 60px 10px;
+    [class*='bg-'] {
+      margin-left: -61px;
+      margin-right: -61px;
+    }
+    .plan-name[class*='bg-'] {
+      margin-top: -57px;
+    }
+  }
+
+  .plan-features {
+    margin: 50px 0 20px;
+  }
+
+  .plan-button {
+    position: static;
+  }
+
+  //featured border
+  &.plan-featured {
+    border: 10px solid $colorMain;
+    transform: translateY(-10px);
+    .plan-button {
+      top: 48px;
+    }
+  }
+}
+
+.price-layout-1{
+  padding: 95px 30px 55px;
+  margin: 0;
+  border: 1px solid $darkBlueColorLighter;
+  box-shadow: 0px 19px 27px 0px rgba(0, 0, 0, 0.3);
+  color: $darkFontColor;
+  .price-wrap{
+    margin-top: 60px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    .wrapper + span:not(empty){
+      border-left: 1px solid $darkBorderColor;
+    }
+    .wrapper{
+      display: flex;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .plan-sign{
+      font-family: 'El Messiri', sans-serif;
+      font-size: 35px;
+      top: -5px;
+      position: relative;
+      color: $lightColor;
+    }
+    .plan-price{
+      font-family: 'El Messiri', sans-serif;
+      font-size: 60px;
+      color: $colorMain;
+      margin-bottom: -0.2em;
+    }
+    .plan-decimals{
+      padding-left: 15px;
+      padding-right: 15px;
+      line-height: 1.2;
+      min-height: 48px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .plan-features{
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .plan-name{
+    h3{
+      font-size: 40px;
+      color: $colorMain2;
+      letter-spacing: normal;
+    }
+  }
+  .plan-description{
+
+  }
+  .list-bordered{
+    li{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border: none;
+      &::before{
+        content: '\f0da';
+        font-family: "FontAwesome", sans-serif;
+        color: $colorMain;
+        margin-right: 10px;
+      }
+      &.enabled{
+        &::before{
+          content: '\f00c';
+        }
+      }
+      &.disabled{
+        &::before{
+          content: '\f00d';
+        }
+      }
+    }
+  }
+  .plan-button{
+    position: static;
+    margin-top: 65px;
+    .btn{
+      color: $darkColor;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    padding: 50px 20px 50px;
+
+    .plan-features{
+      margin-top: 20px;
+    }
+
+    .price-wrap{
+      margin-top: 30px;
+    }
+
+    .plan-button{
+      margin-top: 40px;
+    }
+  }
+
+  &.plan-featured{
+    transform: none;
+    position: relative;
+    color: $lightColor;
+    border-width: 1px;
+    padding-bottom: 85px;
+     .plan-name h3{
+       color: $lightColor;
+     }
+    .list-bordered li{
+      color: $darkColor;
+    }
+    .list-bordered li::before{
+      color: $lightColor;
+    }
+    .price-wrap{
+      .plan-sign{
+        color: $darkColor;
+      }
+      .plan-price{
+        color: $lightColor;
+      }
+      .plan-decimals{
+        color: $darkColor;
+      }
+    }
+    .price-wrap .wrapper + span:not(empty){
+      border-color: rgba($lightColor,.15);
+    }
+
+    @media (max-width: 1199px) {
+      padding-bottom: 50px;
+    }
+  }
+}

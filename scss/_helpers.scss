@@ -1,0 +1,378 @@
+/*
+** Helper Utilities
+*/
+@import 'helpers/helpers_layout';
+@import 'helpers/helpers_colors';
+@import 'helpers/helpers_spacing';
+
+.ds{
+  .line-left{
+    &::before{
+      background-color: $colorMain;
+    }
+  }
+}
+.line-left{
+  line-height: .8;
+  &::before{
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: $darkgreyColor;
+    transform: translateY(-0.3em);
+    margin-right: 20px;
+  }
+}
+
+.border-left-custom{
+  @media (min-width: 768px) {
+    border-left: 2px solid $colorMain;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.several-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  &.center-buttons{
+    justify-content: center;
+  }
+  @media (max-width: 767px){
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn:not(:last-child){
+    @media (min-width: 768px){
+      margin-right: 20px;
+    }
+  }
+  .btn:not(:first-child){
+    @media (max-width: 767px){
+      margin-top: 20px;
+    }
+  }
+}
+
+.height-100{
+  & > div{
+    height: 100%;
+  }
+}
+
+.bottom-500-xl{
+  background-color: transparent;
+  @media (min-width: 1200px) {
+    z-index: 3;
+    margin-bottom: -500px;
+    position: relative;
+  }
+}
+
+.bottom-270-xl{
+  background-color: transparent;
+  @media (min-width: 1200px) {
+    z-index: 3;
+    margin-bottom: -270px;
+    position: relative;
+  }
+}
+
+@media (min-width: 1600px) {
+  .mr--100-xl-with-scale {
+    margin-top: 13px;
+    margin-bottom: 13px;
+    transform: translateX(100px) scale(1.06);
+  }
+}
+
+.columns-two-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+  grid-auto-flow: dense;
+  grid-gap: 80px;
+  & > div{
+    grid-column: span 2;
+  }
+  @media (max-width: 1799px) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 60px;
+    & > div{
+      grid-column: span 3;
+      grid-column-start: 2;
+      grid-column-end: 6;
+    }
+  }
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: auto;
+    & > div{
+      grid-column: auto;
+      grid-column-start: auto;
+      grid-column-end: auto;
+    }
+  }
+  @media (max-width: 991px) {
+    grid-template-columns: repeat(8, auto);
+    & > div{
+      grid-column: span 3;
+    }
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 60px;
+    & > div{
+      grid-column: span 3;
+      grid-column-start: 3;
+      grid-column-end: 7;
+    }
+  }
+}
+
+.column-two{
+  columns: 2;
+  @media (max-width: 575px){
+    columns: auto;
+  }
+}
+
+.columns-two{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 575px) {
+    flex-direction: column;
+    & > *{
+      &:nth-child(2){
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.team{
+  &.excerpt-none{
+    p + .team-excerpt{
+      &:last-child{
+        margin-top: -20px;
+      }
+    }
+    .team-excerpt{
+      display: none;
+    }
+  }
+  &.position-none{
+    .team-position{
+      display: none;
+    }
+  }
+  &.soc-icons-none{
+    .social-icons{
+      display: none;
+    }
+  }
+}
+
+.font-2{
+  font-family: 'El Messiri', sans-serif;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.basis-flex-3{
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  & > div{
+    flex-basis: 33.3%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @media (max-width: 991px){
+    flex-direction: column;
+    margin-right: 0;
+    margin-left: 0;
+    & > div{
+      padding-right: 0;
+      padding-left: 0;
+      &:not(:first-child){
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+.max-content{
+  max-width: 890px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.owl-three-opacity{
+  &.owl-carousel{
+    @media (min-width: 992px) {
+      margin-right: -10px;
+      width: calc( 100% + 10px );
+    }
+    .owl-item{
+      &.active + .active +.active{
+        .vertical-item{
+          opacity: .7;
+        }
+      }
+    }
+  }
+}
+
+// Corners
+.ds{
+  .corner-box{
+    border-color: $darkBorderColor;
+    &:before,
+    &:after,
+    .item-content:before,
+    .item-content:after{
+      border-color: $lightColor;
+    }
+  }
+}
+.corner-box {
+  border: 1px solid $borderColor;
+  position: relative;
+  &:before,
+  &:after,
+  .item-content:before,
+  .item-content:after {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    content: '';
+    border-color: $darkgreyColor;
+    border-style: solid;
+    transition: all .4s ease-in-out;
+  }
+  &:before {
+    left: 0;
+    top: 0;
+    border-width: 1px 0 0 1px;
+  }
+  &:after {
+    right: 0;
+    top: 0;
+    border-width: 1px 1px 0 0;
+  }
+  .item-content:before {
+    right: 0;
+    bottom: 0;
+    border-width: 0 1px 1px 0;
+  }
+  .item-content:after {
+    left: 0;
+    bottom: 0;
+    border-width: 0 0 1px 1px;
+  }
+  &:hover{
+    &:before,
+    .item-content:before,
+    &:after,
+    .item-content:after{
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@keyframes rotating{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.col-absolute{
+  @media (min-width: 1200px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.pattern{
+  background-image: url("../img/patterns/pattern13.png");
+}
+
+.ls.ms{
+  &.opacity{
+    background-color: rgba($greyColor,.95);
+  }
+}
+.ds{
+  &.opacity{
+    background-color: rgba($darkgreyColor,.95);
+  }
+}
+.ds.ms{
+  &.opacity{
+    background-color: rgba($darkColor,.95);
+  }
+}
+.ds.bs{
+  &.opacity{
+    background-color: rgba($darkBlueColor,.95);
+  }
+}
+.opacity{
+  background-color: rgba($lightColor,.95);
+}
+
+.big-width {
+  @media (min-width: 1200px) {
+    width: calc(100% + 150px);
+  }
+}
+
+.top-130-xl{
+  @media (min-width: 1200px) {
+    margin-top: -130px;
+  }
+}
+
+.background-transparent{
+  background-color: transparent;
+}

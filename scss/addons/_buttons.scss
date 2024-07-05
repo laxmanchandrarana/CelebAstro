@@ -1,0 +1,259 @@
+/*
+** Buttons
+ */
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: 0 0 3px 0 rgba(100, 100, 100, .75);
+}
+
+.btn-secondary {
+  border-color: $borderColor;
+  color: $darkgreyColor;
+}
+
+.btn-link{
+  color: $darkgreyColor;
+  text-decoration: underline;
+  &:hover{
+    color: $colorMain2;
+  }
+}
+
+.service-layout-3,
+.service-layout-1{
+  &.ls,
+  &.ds{
+    .btn-booking{
+      background-color: $greyColor;
+    }
+    &.ms{
+      .btn-booking{
+        background-color: $lightColor;
+      }
+    }
+  }
+
+}
+
+.btn-shop{
+  text-align: left;
+  padding-right: 60px;
+  position: relative;
+  overflow: hidden;
+  background-color: $colorMain;
+  &::before{
+    content: '\f067';
+    font: {
+      family: "FontAwesome", sans-serif;
+      size: 12px;
+    };
+    color: $lightColor;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    padding-right: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 2;
+    transition: all .3s ease-in-out;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    padding-right: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $darkBlueColor;
+    z-index: 1;
+    transition: all .4s ease-in-out;
+  }
+  &:hover{
+    background-color: $colorMain;
+    color: $lightColor;
+    &::before{
+      right: 0;
+    }
+    &::after{
+      opacity: 0;
+    }
+  }
+}
+
+.btn-booking{
+  color: $darkColor;
+  background-color: $greyColor;
+  padding: 9px 50px 8px 25px;
+  border-radius: 30px;
+  height: 40px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
+  z-index: 1;
+  width: 100%;
+  &::before{
+    content: '\f04b';
+    font-family: "FontAwesome", sans-serif;
+    font-size: 12px;
+    color: $lightColor;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $colorMain;
+    z-index: 1;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-color: $colorMain;
+    width: 0;
+    height: 100%;
+    right: 0;
+    top: 0;
+    border-radius: 35px;
+    transition: all .3s ease-in-out;
+  }
+  &:hover{
+    color: $lightColor!important;
+    &::after{
+      width: 100%;
+    }
+  }
+}
+
+/*color background buttons*/
+.btn-maincolor,
+.btn-maincolor2,
+.btn-maincolor3{
+  color: $lightColor;
+}
+
+.btn-maincolor,
+.btn-maincolor2,
+.btn-maincolor3,
+.btn-darkgrey,
+.btn-grey{
+  border: 1px solid transparent;
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+  overflow: hidden;
+  transition: all .4s ease-in-out;
+  &:hover{
+    background-color: transparent;
+  }
+}
+
+.btn-maincolor {
+  border-color: $colorMain;
+  background-color: $colorMain;
+  &:hover{
+    color: $darkgreyColor;
+  }
+}
+
+.btn-maincolor2 {
+  border-color: $colorMain2;
+  background-color: $colorMain2;
+  &:hover{
+    color: $darkgreyColor;
+  }
+}
+
+.btn-maincolor3 {
+  border-color: $colorMain3;
+  background-color: $colorMain3;
+  &:hover{
+    color: $darkgreyColor;
+  }
+}
+
+.btn-grey {
+  color: $darkgreyColor;
+  border-color: $greyColor;
+  background-color: $greyColor;
+  &:hover{
+    color: $darkgreyColor;
+  }
+}
+
+.btn-darkgrey {
+  border-color: $darkBlueColor;
+  color: $lightColor;
+  background-color: $darkBlueColor;
+  &:hover{
+    color: $darkgreyColor;
+  }
+}
+
+/*color outline buttons*/
+.btn-outline-maincolor,
+.btn-outline-maincolor2,
+.btn-outline-maincolor3,
+.btn-outline-darkgrey {
+  border: 1px solid transparent;
+  color: $darkgreyColor;
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+  overflow: hidden;
+  transition: all .4s ease-in-out;
+  span{
+    z-index: 2;
+    position: relative;
+  }
+  &:hover{
+    color: $lightColor;
+  }
+}
+
+.btn-outline-maincolor {
+  border-color: $colorMain;
+  &:hover{
+    background-color: $colorMain;
+  }
+}
+
+.btn-outline-maincolor2 {
+  border-color: $colorMain2;
+  &:hover{
+    background-color: $colorMain2;
+  }
+}
+
+.btn-outline-maincolor3 {
+  border-color: $colorMain3;
+  &:hover{
+    background-color: $colorMain3;
+  }
+}
+
+.btn-outline-darkgrey {
+  border-color: $darkBlueColor;
+  &:hover{
+    background-color: $darkBlueColor;
+  }
+}

@@ -1,0 +1,135 @@
+/* bootstrap collapse*/
+
+aside{
+  [role="tablist"] .card .card-body{
+    padding-left: 30px;
+    padding-right: 30px;
+    &::before{
+      display: none;
+    }
+  }
+}
+
+//unstyled
+[data-toggle="collapse"] {
+  display: inline-block;
+  position: relative;
+  padding-right: 20px;
+  &:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -7px;
+    font-size: 10px;
+    font-family: 'FontAwesome';
+    content: "\f078";
+  }
+  &.collapsed {
+    &:after {
+      content: "\f054";
+    }
+  }
+}
+
+//cards as tabs
+[role="tablist"] {
+  .card {
+    & + .card{
+      margin-top: 33px;
+    }
+    border: {
+      left: none;
+      right: none;
+      top: none;
+    }
+    border-radius: 0;
+    background: none;
+    margin-bottom: -1px;
+    border-bottom: 1px solid $darkBorderColor;
+    .card-header {
+      padding: 0;
+      background: none;
+      border: none;
+      a {
+        font-family: 'El Messiri', sans-serif;
+        font-size: 20px;
+        display: block;
+        position: relative;
+        padding: 0 80px 32px 40px;
+        color: $colorMain2;
+        transition: all .3s ease-in-out;
+        &:after {
+          content: '\f068';
+          font-family: "FontAwesome", sans-serif;
+          top: 10px;
+          left: 0;
+          color: $darkgreyColor;
+          font-size: 10px;
+          transition: all .3s ease-in-out;
+        }
+        &:hover {
+          color: $darkgreyColor;
+          opacity: 1;
+          &:before,
+          &:after {
+          }
+        }
+        &.collapsed {
+          font-size: 20px;
+          color: $darkgreyColor;
+          &:hover{
+            color: $colorMain2;
+          }
+          &:after {
+            content: '\f067';
+            top: 10px;
+            color: $colorMain;
+          }
+        }
+      }
+    }
+    .collapse{
+      .card-body{
+        background-color: transparent;
+        transition: all .3s ease-in-out;
+      }
+      &.show{
+        .card-body{
+
+        }
+      }
+    }
+    .collapsing{
+      .card-body{
+
+      }
+    }
+    .card-body {
+      padding: 0 40px 40px;
+      position: relative;
+    }
+  }
+  [data-toggle="collapse"]{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .media img {
+    max-width: 80px;
+  }
+}
+
+.ds{
+  [role="tablist"] .card .card-header a.collapsed{
+    color: $lightColor;
+    &:after{
+      color: $colorMain;
+    }
+  }
+  [role="tablist"] .card .card-header a:hover{
+    color: $colorMain2;
+  }
+  [role="tablist"] .card .card-header a:after{
+    color: $lightColor;
+  }
+}
