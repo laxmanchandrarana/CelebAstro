@@ -23303,14 +23303,10 @@ img.absolute_image {
 	animation-play-state: paused;
 }
 
-.fade-in-image { animation: fadeIn 7s; }
+.fade-in-image { animation: fadeIn 10s; }
 
 @keyframes fadeIn {
 	0% { opacity: 0; }
 	100% { opacity: 1; }
 }  
 
-h3:hover {
-	color: #cc2127;
-	background: blueviolet;
-}
