@@ -20,7 +20,7 @@ function storeAddress(){
 	
 	// grab your List's Unique Id by going to http://admin.mailchimp.com/lists/
 	// Click the "settings" link for the list - the Unique Id is at the bottom of that page. 
-	$list_id = "49c51f3024784444029c998731ff964a-us13";
+	$list_id = "392669efc9";
 	if($api->listSubscribe($list_id, $_GET['email'], '') === true) {
 		// It worked!	
 		return 'Success! Check your email to confirm sign up.';
