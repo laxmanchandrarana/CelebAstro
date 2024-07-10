@@ -16625,7 +16625,7 @@ widget_recent_entries
 a[class*='fa-']:before {
 	display: inline-block;
 	font-family: "FontAwesome", sans-serif;
-	font-size: 14px;
+	font-size: 20px;
 	line-height: 1;
 	width: 1em;
 }
