@@ -23310,3 +23310,26 @@ img.absolute_image {
 	100% { opacity: 1; }
 }  
 
+.custom-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; /* Ensure it takes full height of the parent container */
+}
+
+.custom-center .logo {
+    display: inline-block;
+}
+
+.logo-text {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Optional: adjust the weight if needed */
+}
+
+/* You can also add responsive adjustments */
+@media (max-width: 767px) {
+    .logo-text {
+        font-size: 18px; /* Adjust the font size for smaller screens */
+    }
+}
