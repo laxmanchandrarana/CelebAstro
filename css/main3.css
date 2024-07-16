@@ -19978,7 +19978,7 @@ a.logo .logo-text {
 	font-weight: 700;
 	letter-spacing: 1em;
 	line-height: 1;
-	margin-left: -15px;
+	margin-left: 25px;
 	margin-top: 2px;
 	padding: 0;
 	text-indent: 1em;
@@ -23303,14 +23303,3 @@ img.absolute_image {
     display: inline-block;
 }
 
-.logo-text {
-    font-size: 24px; /* Adjust the font size as needed */
-    font-weight: bold; /* Optional: adjust the weight if needed */
-}
-
-/* You can also add responsive adjustments */
-@media (max-width: 767px) {
-    .logo-text {
-        font-size: 18px; /* Adjust the font size for smaller screens */
-    }
-}
