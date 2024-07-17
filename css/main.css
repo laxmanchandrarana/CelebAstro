@@ -19981,7 +19981,7 @@ a.logo .logo-text {
 	/* margin-left: 25px; */
 	margin-top: 2px;
 	padding: 0;
-	text-indent: 1em;
+	/* text-indent: 1em; */
 	/* text-align: center; */
 	text-transform: uppercase;
 	transition: all .4s ease-in-out;
