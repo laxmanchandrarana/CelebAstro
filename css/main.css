@@ -19974,7 +19974,7 @@ a.logo img {
 
 a.logo .logo-text {
 	font-family: "El Messiri", sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: 0.6em;
 	line-height: 1;
@@ -19982,12 +19982,15 @@ a.logo .logo-text {
 	margin-top: 2px;
 	padding: 0;
 	text-indent: 1em;
+	text-align: left;
 	text-transform: uppercase;
 	transition: all .3s ease-in-out;
+	
 }
 
 a.logo .logo-text:hover {
 	color: #ca416e;
+	font-size: 12px;
 }
 
 a.logo .logo-subtext {
