@@ -16253,7 +16253,7 @@ widget_recent_entries
 }
 
 .apsc-instagram-icon {
-	background-color: #3f729b;
+	background-color: #d62976;
 }
 
 .apsc-each-profile a {
@@ -16334,7 +16334,7 @@ widget_recent_entries
 }
 
 .apsc-theme-4 .apsc-instagram-icon i {
-	background-color: #3f729b;
+	background-color: #d62976;
 }
 
 .apsc-theme-4 .apsc-each-profile {
@@ -17236,7 +17236,7 @@ a[class*="fa-"].fa-html5:hover {
 
 a.color-icon.fa-instagram,
 a[class*="fa-"].fa-instagram:hover {
-	color: #3f729b;
+	color: #d62976;
 }
 
 a.color-icon.fa-internet-explorer,
@@ -18014,7 +18014,7 @@ a.fa-html5.bg-icon:hover,
 .color-bg-icon.fa-instagram,
 a.fa-instagram.bg-icon:hover,
 .fa-instagram.color-icon.border-icon:hover {
-	background-color: #3f729b;
+	background-color: #d62976;
 }
 
 .color-bg-icon.fa-internet-explorer,
@@ -19974,20 +19974,25 @@ a.logo img {
 
 a.logo .logo-text {
 	font-family: "El Messiri", sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 500;
 	letter-spacing: 0.6em;
 	line-height: 1;
-	margin-left: 25px;
+	/* margin-left: 25px; */
 	margin-top: 2px;
 	padding: 0;
-	text-indent: 1em;
+	/* text-indent: 1em; */
+	/* text-align: center; */
 	text-transform: uppercase;
-	transition: all .3s ease-in-out;
+	transition: all .4s ease-in-out;
+	
 }
 
 a.logo .logo-text:hover {
 	color: #ca416e;
+	font-size: 14px;
+	font-weight: 1000;
+	letter-spacing: 0.35em;
 }
 
 a.logo .logo-subtext {
@@ -23292,9 +23297,9 @@ img.absolute_image {
 	bottom:0;
 	right:0;
 	border-radius: 50%;
-	margin: 0 -10px;
+	margin: 0 0px;
 	width: calc(100% + 20px);
-	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%);
 	/* height: 40%; */
 	
 }
