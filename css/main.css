@@ -403,9 +403,112 @@ table th {
 	vertical-align: middle;
 }
 
-.wp-block-table.is-style-stripes {
-	border: none;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cards {
+	perspective: 100000px;
 }
+
+.card {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	/* border: 2px solid transparent; */
+	/* border-radius: 4px; */
+	position: relative;
+	transform-style: preserve-3d;
+	will-change: transform;
+	transition: transform .5s;
+}
+
+.card:hover {
+	transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+}
+
+.card_title {
+	color: transparent;
+	position: relative;
+	transform: translateY(-50%);
+	transition: transform .5s;
+	font: 700 1.5rem monospace;
+}
+
+.card:hover .card_title {
+	transform: translateZ(50px);
+}
+
+
+.wp-block-table.is-style-stripes {
+	border: transparent;
+}
+
+
+
+.shadow__btn {
+	padding: 10px 20px;
+	border: none;
+	font-size: 17px;
+	color: #fff;
+	border-radius: 7px;
+	letter-spacing: 4px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.5s;
+	transition-property: box-shadow;
+}
+
+.shadow__btn {
+	background: #ca416e;
+	box-shadow: #219bf1;
+}
+
+.shadow__btn:hover {
+	box-shadow: 0 0 5px rgb(0, 140, 255),
+		0 0 25px rgb(255, 94, 0),
+		0 0 50px rgb(0, 140, 255),
+		0 0 100px rgb(0, 140, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .ds table td,
 .ds table th,
@@ -17237,6 +17340,11 @@ a[class*="fa-"].fa-html5:hover {
 a.color-icon.fa-instagram,
 a[class*="fa-"].fa-instagram:hover {
 	color: #d62976;
+}
+
+a.color-icon.fa-whatsapp,
+a[class*="fa-"].fa-whatsapp:hover {
+	color: green;
 }
 
 a.color-icon.fa-internet-explorer,
