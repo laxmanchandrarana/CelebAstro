@@ -43,21 +43,6 @@
 		<div class="preloader_image pulse"></div>
 	</div>
 
-	<!-- search modal -->
-	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
-		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
-		<div class="widget widget_search">
-			<form method="get" class="searchform search-form" action="/">
-				<div class="form-group">
-					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
-				</div>
-				<button type="submit" class="btn">Search</button>
-			</form>
-		</div>
-	</div>
-
 	<!-- Unyson messages modal -->
 	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
 		<div class="fw-messages-wrap ls p-normal">
@@ -175,10 +160,10 @@
 									<span class="logo-text color-darkgrey">Celebrity<br>Astrologer</span>
 								</a>
 							</div>
-							<div class="col-xl-6 col-lg-8 col-md-8 some-links text-center text-lg-right d-flex justify-content-center justify-content-md-end align-items-center mt-2 mt-md-0">
+							<div class="cards col-xl-6 col-lg-8 col-md-8 some-links text-center text-lg-right d-flex justify-content-center justify-content-md-end align-items-center mt-2 mt-md-0">
 
 								<a class="fs-24 links-maincolor-hover font-2" href="tel:+919008119881"><mark>+91</mark> 90081 19881</a>
-								<a href="contact.html" class="btn btn-outline-maincolor btn-medium d-none d-md-block">
+								<a href="contact.html" class="btn shadow_btn btn-outline-maincolor btn-medium d-none d-md-block">
 									Contact Us
 								</a>
 							</div>
@@ -263,7 +248,7 @@
 								<section class="cards">
 									<figure class="card">
 										<figcaption class="card_title">
-											<a href="contact.html" class="btn shadow__btn">Get in Touch</a>
+											<a href="contact.html" class="btn shadow__btn btn-maincolor">Get in Touch</a>
 										</figcaption>
 									</figure>
 								</section>
@@ -312,12 +297,21 @@
 								</div>
 							</div>
 							<div class="divider-30 divider-xl-50"></div>
-							<a href="about.html" class="btn btn-outline-maincolor btn-medium">Know More</a>
+							<section class="cards">
+								<figure class="card">
+									<figcaption class="card_title">
+										<a href="about.html" class="btn shadow__btn btn-maincolor">Know More</a>
+									</figcaption>
+								</figure>
+							</section>
 						</div>
 					</div>
 				</div>
 			</section>
-
+			<video width=100% controls autoplay>
+				<source src="videos/vid.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
 			<!--Section Forecast-->
 			<section id="forecasts" class="ds section-forecast s-overlay s-pt-90 s-pb-30 s-pt-xl-150 s-pb-xl-90 c-gutter-60 c-mb-60">
 				<div class="container">
@@ -535,14 +529,20 @@
 								<span>Ready for a cosmic makeover? Guruji’s services range from personalized horoscopes to life-changing predictions. Whether you need career advice or love life insights, Guruji’s got you covered. Think of it as stargazing with a purpose – because who doesn't want a little celestial help?</span>
 							</p>
 							<div class="divider-35"></div>
-							<a href="contact.html" class="btn btn-outline-maincolor btn-medium">Book Reading Now</a>
+							<section class="cards">
+								<figure class="card">
+									<figcaption class="card_title">
+										<a href="contact.html" class="btn shadow__btn btn-maincolor btn-medium ">Book Reading Now</a>
+									</figcaption>
+								</figure>
+							</section>
 						</div>
 						<div class="col-xl-1"></div>
 						<div class="col-xl-3"></div>
 						<div class="col-xl-9">
 							<div class="big-width">
 								<div class="divider-55"></div>
-								<div class="owl-carousel " data-responsive-lg="4" data-responsive-md="3" data-responsive-sm="2" data-responsive-xs="1" data-nav="false" data-margin="30" data-loop="true" data-autoplay="true">
+								<div class="owl-carousel " data-responsive-lg="3" data-responsive-md="3" data-responsive-sm="2" data-responsive-xs="1" data-nav="false" data-margin="20" data-loop="true" data-autoplay="true">
 									<div class="vertical-item service-layout-2 content-absolute box-shadow  content-padding">
 										<div class="item-media">
 											<img src="images/services/img_8.jpg" alt="img">
@@ -690,7 +690,7 @@
 
 							<div class="divider-40 divider-xl-60"></div>
 
-							<div class="owl-carousel quote-carousel owl-navigation" data-responsive-lg="3" data-responsive-md="3" data-responsive-sm="1" data-responsive-xs="1" data-nav="false" data-margin="50" data-loop="true" data-dots="false" data-autoplay="true" data-center="true">
+							<div class="owl-carousel quote-carousel owl-navigation" data-responsive-lg="2" data-responsive-md="3" data-responsive-sm="1" data-responsive-xs="1" data-nav="false" data-margin="50" data-loop="true" data-dots="false" data-autoplay="true" data-center="true">
 								<div class="quote-item vertical quote-layout-2">
 									<div class="wrap-img">
 										<img src="images/gallery/quote_1.jpg" alt="img">
@@ -727,8 +727,7 @@
 										<div class="quote-content">
 											<blockquote>
 												<p>
-													
-A highly educated astrologer, Guruji deeply analyzes all aspects of your life. He has provided excellent advice to many mid-level entrepreneurs and those running monopolies. Guruji offers straightforward advice and convenient remedies that don't require expensive interventions.
+													A highly educated astrologer, Guruji deeply analyzes all aspects of your life. He has provided excellent advice to many mid-level entrepreneurs and those running monopolies. Guruji offers straightforward advice and convenient remedies that don't require expensive interventions.
 												</p>
 											</blockquote>
 										</div>
@@ -749,8 +748,7 @@ A highly educated astrologer, Guruji deeply analyzes all aspects of your life. H
 										<div class="quote-content">
 											<blockquote>
 												<p>
-													
-I received career-related advice from him three years ago, and it has proven accurate with each passing month. I'm amazed at how simple remedies can play such a vital role. Recently, I visited him for my sister's marriage, and I had the same positive experience.
+													I received career-related advice from him three years ago, and it has proven accurate with each passing month. I'm amazed at how simple remedies can play such a vital role. Recently, I visited him for my sister's marriage, and I had the same positive experience.
 												</p>
 											</blockquote>
 										</div>
@@ -761,10 +759,11 @@ I received career-related advice from him three years ago, and it has proven acc
 					</div>
 				</div>
 			</section>
+			
 			<section class="ds ms" data-draggable="false" data-scrollwheel="false">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3888.980459266241!2d77.63896237619923!3d12.90897738378747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU0JzMyLjMiTiA3N8KwMzgnMzcuOCJF!5e0!3m2!1sen!2sin!4v1721152066364!5m2!1sen!2sin" width="100%" height="500px" style="border:none; margin-top: 20%;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</section>
-			 <footer class="page_footer ds ms s-py-90 s-pb-lg-60 s-pt-xl-150 s-pb-xl-120">
+			<footer class="page_footer ds ms s-py-90 s-pb-lg-60 s-pt-xl-150 s-pb-xl-120">
         <div class="container">
             <div class="row align-center">
                 <div class="col-xl-2 col-lg-2 align-self-start text-center text-lg-left">
