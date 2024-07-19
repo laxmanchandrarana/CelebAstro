@@ -19978,7 +19978,7 @@ a.logo .logo-text {
 	font-weight: 700;
 	letter-spacing: 1em;
 	line-height: 1;
-	margin-left: -15px;
+	margin-left: 25px;
 	margin-top: 2px;
 	padding: 0;
 	text-indent: 1em;
@@ -23290,3 +23290,16 @@ img.absolute_image {
 .horoscope-image:hover {
 	animation-play-state: paused;
 }
+
+.custom-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; /* Ensure it takes full height of the parent container */
+}
+
+.custom-center .logo {
+    display: inline-block;
+}
+
