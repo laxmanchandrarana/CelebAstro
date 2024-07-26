@@ -14314,7 +14314,7 @@ span.muted-bg {
 
 @media (max-width: 1199px) {
 	.special-heading.big-size {
-		font-size: 60px;
+		font-size: 70px;
 	}
 }
 
@@ -23450,15 +23450,22 @@ img.absolute_image {
 	width: calc(100% + 20px);
 }
 .guruji-image {
-	position:absolute;
+	position:relative;
 	bottom:0;
 	right:0;
 	border-radius: 50%;
 	margin: 0 0px;
 	width: calc(100% + 20px);
-	background: linear-gradient(to bottom, rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 90%,rgba(255,255,255,1) 100%);
 	/* height: 40%; */
 	
+}
+
+
+.color-main20 {
+	border-color: #219bf1;
+	color: #ca416e !important;
+	font-size: 100px;
 }
 
 .horoscope-image:hover {
