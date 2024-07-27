@@ -23474,7 +23474,7 @@ img.absolute_image {
 	width: calc(100% + 20px);
 }
 .guruji-image {
-	position:relative;
+	position:absolute;
 	bottom:0;
 	right:0;
 	border-radius: 50%;
